@@ -125,7 +125,7 @@ class PlayerSpec: QuickSpec {
                     player.cards.append(tenOfDiamonds)
                     player.cards.append(aceOfSpades)
                     
-                    expect(player.blackjack).to(beFalse())
+                    expect(player.blackjack).to(beTrue())
                 }
                 
                 it("returns false with a queen, a ten, and a two in the cards array") {

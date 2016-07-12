@@ -24,8 +24,8 @@ class DeckSpec: QuickSpec {
             
             describe("initializer") {
                 it("should set up the deck with 52 undealt cards") {
-                    expect(deck.description).to(contain("Cards Remaining: 52"))
-                    expect(deck.description).to(contain("Cards Dealt: 0"))
+                    expect(deck.description).to(contain("Cards remaining: 52"))
+                    expect(deck.description).to(contain("Cards dealt: 0"))
                 }
             }
             
@@ -33,7 +33,7 @@ class DeckSpec: QuickSpec {
                 it("should return the King of Clubs from a fresh deck") {
                     let card = deck.drawCard()
                     
-                    expect(card.cardLabel).to(match("♣︎K"))
+                    expect(card.cardLabel).to(match("♦️A"))
                 }
             }
             
